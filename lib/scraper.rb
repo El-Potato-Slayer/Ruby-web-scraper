@@ -7,6 +7,5 @@ class Scraper
   def initialize(page_url)
     @page = URI.parse(page_url)
     @doc = Nokogiri::HTML(@page.open)
-    puts @doc
   end
 end
